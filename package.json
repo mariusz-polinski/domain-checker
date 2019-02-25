@@ -2,7 +2,10 @@
   "name": "domain-checker",
   "version": "1.0.0",
   "description": "",
-  "dependencies": {},
+  "dependencies": {
+    "@types/node": "^11.9.5",
+    "whois-promise": "^1.2.2"
+  },
   "devDependencies": {
     "jest": "^24.1.0",
     "@types/jest": "^24.0.6",

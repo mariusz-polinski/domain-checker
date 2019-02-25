@@ -1,10 +1,6 @@
-export function getGreeting(): string {
-  return 'Hello World';
-}
+import { DomainChecker, WhoisResponse } from './modules/domain-checker';
 
-function sayHello() {
-  // tslint:disable-next-line:no-console
-  console.log(getGreeting());
-}
-
-sayHello();
+const domainChecker = new DomainChecker();
+domainChecker.getInfo('sylwia-polinska.pl').then((data: WhoisResponse) => {
+  console.log(DomainChecker.getDomainShortInfo(data));
+});
